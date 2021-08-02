@@ -440,6 +440,34 @@ table {
 }
 /* CSS RESET END */
 
+/* TEXT STYLES START */
+.grey-heading {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 34px;
+  color: #BDBDBD;
+}
+
+.h2 {
+  font-family: 'Merriweather';
+  font-weight: 900px;
+  font-size: 48px;
+  color: #333333;
+  line-height: 70px;
+}
+
+.white-heading {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+/* TEXT STYLES END */
+
+
 /* COMMON STYLES START */
 
 *,
@@ -458,6 +486,10 @@ table {
   font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: white;
 } */
+
+body {
+  margin-bottom: 500px;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -561,4 +593,40 @@ button{
   padding: 20px 60px;
   margin-top: 48px;
   margin-bottom: 240px;
+}
+
+.services .grey-heading {
+  margin-top: 140px;
+  margin-bottom: 37px;
+}
+
+.services .h2 {
+  margin-bottom: 100px;
+}
+
+.list-of-services {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.service-items {
+
+}
+.service-links {
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)),url(../img/background_services.png);
+  width: 350px;
+  height: 360px;
+  /* justify-content: center;
+  align-items: flex-end; */
+  margin-bottom: 30px;
+}
+
+.service-links:hover {
+  background: linear-gradient(#005fa36c, #005fa36c),url(../img/background_services.png);
+}
+
+.service-links>.h4 {
+  padding-left:45px;
+  padding-top: 260px;
 }
