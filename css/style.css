@@ -489,6 +489,7 @@ table {
 
 body {
   margin-bottom: 500px;
+  background-color: #EBEBEB;
 }
 a {
   text-decoration: none;
@@ -531,6 +532,10 @@ button{
 
 .header>.container {
   display: flex;
+}
+
+.header {
+  background-color: white;
 }
 .logo-text {
   font-family: 'Merriweather';
@@ -576,6 +581,7 @@ button{
   padding-right: 60px;
 }
 
+/* MAIN OFFER START */
 .offer {
   background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(/img/background_picture.png) no-repeat 50% / cover;
 }
@@ -595,6 +601,8 @@ button{
   margin-bottom: 240px;
 }
 
+/* SERVICES START */
+
 .services .grey-heading {
   margin-top: 140px;
   margin-bottom: 37px;
@@ -610,9 +618,9 @@ button{
   justify-content: space-between;
 }
 
-.service-items {
+/* .service-items {
 
-}
+} */
 .service-links {
   background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)),url(../img/background_services.png);
   width: 350px;
@@ -629,4 +637,51 @@ button{
 .service-links>.h4 {
   padding-left:45px;
   padding-top: 260px;
+}
+
+/* ABOUT US START*/
+.about-us {
+  background-color: white;
+}
+
+.about-us>.container {
+  display: flex;
+  height: 560px;
+}
+
+.text-list {
+  width: 50%;
+}
+
+.about-us .grey-heading {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.blue {
+  color:#005FA3;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.body-text {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.about-us-list {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.about-us-links {
+  background-color: #EBEBEB;
+  width: 255px;
+  height: 255px;
 }
