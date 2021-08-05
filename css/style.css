@@ -546,14 +546,10 @@ button{
   margin: 0px auto;
   /* display:flex; */
 }
-/* :focus{
-    outline: 5px dashed red!important;
-  } */
 
 /* COMMON STYLES END */
-/* .header>.container {
-  display: flex;
-} */
+
+/* HEADER START */
 
 .header>.container {
   display: flex;
@@ -606,7 +602,7 @@ button{
   padding: 22px 15px;
 }
 
-.upper-links:hover {
+ .upper-links:hover, .bottom-links:hover {
   background-color:#005fa36c;
 }
 
@@ -646,9 +642,6 @@ button{
   padding: 15px 34px;
 }
 
-.bottom-links:hover {
-  background-color:#005fa36c;
-}
 
 
 /* MAIN OFFER START */
