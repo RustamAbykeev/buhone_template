@@ -441,28 +441,29 @@ table {
 /* CSS RESET END */
 
 /* TEXT STYLES START */
-.grey-heading {
-  font-family: 'Roboto';
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 34px;
-  color: #BDBDBD;
+
+.h1 {
+  font-family: 'Merriweather';
+  font-weight: 700;
+  font-size: 48px;
+  color: #FFFFFF;
+  line-height: 110%;
 }
 
 .h2 {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 170%;
+  color: #BDBDBD;
+}
+
+.h3 {
   font-family: 'Merriweather';
   font-weight: 900px;
   font-size: 48px;
   color: #333333;
-  line-height: 70px;
-}
-
-.white-heading {
-  font-family: 'Roboto';
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 30px;
-  color: #FFFFFF;
+  line-height: 145%;
 }
 
 /* TEXT STYLES END */
@@ -480,17 +481,18 @@ table {
   display: inline-flex;
 }
 /* html{
-    /* scroll-behavior: smooth; */
-
-/* body {
-  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  background-color: white;
+    scroll-behavior: smooth;
 } */
 
 body {
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   margin-bottom: 500px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 115%;
   background-color: #EBEBEB;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -506,14 +508,16 @@ button{
 }
 
 .btn {
+  max-width: 270px;
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 110%;
   background-color: #005FA3;
   color: #FFFFFF;
-
+  padding: 18px 45px;
 }
+
 .container {
   max-width: 1110px;
   width: 100%;
@@ -532,29 +536,41 @@ button{
 
 .header>.container {
   display: flex;
+  justify-content: space-between;
 }
 
 .header {
   background-color: white;
 }
-.logo-text {
+
+.logo-link {
+  padding: 30px 0px;
+}
+
+.logo-img {
+  background-color: #ccc;
+  margin-right: 30px;
+  }
+
+.logo-letters {
   font-family: 'Merriweather';
   font-weight: 900;
   font-size: 36px;
   color:#005FA3;
-  line-height: 50px;
-  padding: 30px 30px;
+  line-height: 110%;
+  margin-left: 30px;
 }
 
 .right-navbar {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   }
 
 .upper-list {
   display: flex;
   flex-direction: row;
-  padding: 20px 0px;
+  justify-content: flex-end;
   margin-left: 80px;
 }
 
@@ -563,12 +579,13 @@ button{
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
-  padding-right: 22px;
+  padding: 20px 15px;
 }
 
 .bottom-list {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   margin-left: 80px; 
 }
 
@@ -578,66 +595,64 @@ button{
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  padding-right: 60px;
+  padding: 15px 30px;
 }
 
+.bottom-links:nth-child(5) {
+  padding-right: 0px;
+}
 /* MAIN OFFER START */
 .offer {
   background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(/img/background_picture.png) no-repeat 50% / cover;
-}
-
-.offer-text {
-  font-family: 'Merriweather';
-  font-weight: 700;
-  font-size: 48px;
-  color: #FFFFFF;
-  line-height: 66px;
   padding-top: 170px;
+  padding-bottom: 240px;
 }
 
-.offer-btn {
-  padding: 20px 60px;
-  margin-top: 48px;
-  margin-bottom: 240px;
+.h1 {
+  margin-bottom: 48px;
 }
 
 /* SERVICES START */
 
-.services .grey-heading {
-  margin-top: 140px;
-  margin-bottom: 37px;
+.services {
+  padding: 140px 0px;
 }
 
 .services .h2 {
+  margin-bottom: 37px;
+}
+
+.services .h3 {
   margin-bottom: 100px;
 }
 
 .list-of-services {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  gap: 30px;
 }
 
-/* .service-items {
-
-} */
 .service-links {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 125%;
+  color: #FFFFFF;
   background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)),url(../img/background_services.png);
-  width: 350px;
+  width: calc((100% - 60px) / 3);
   height: 360px;
-  /* justify-content: center;
-  align-items: flex-end; */
-  margin-bottom: 30px;
+  align-items: flex-end;
+  padding: 45px;
 }
 
 .service-links:hover {
   background: linear-gradient(#005fa36c, #005fa36c),url(../img/background_services.png);
 }
 
-.service-links>.h4 {
+/* .service-links>.h4 {
   padding-left:45px;
   padding-top: 260px;
-}
+} */
 
 /* ABOUT US START*/
 .about-us {
@@ -646,7 +661,8 @@ button{
 
 .about-us>.container {
   display: flex;
-  height: 560px;
+  padding-top: 140px;
+  /* height: 560px; */
 }
 
 .text-list {
@@ -658,17 +674,10 @@ button{
   margin-bottom: 30px;
 }
 
-.blue {
+.blue-text {
   color:#005FA3;
   margin-top: 20px;
   margin-bottom: 60px;
-}
-
-.body-text {
-  font-family: 'Roboto';
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .about-us-list {
@@ -684,4 +693,6 @@ button{
   background-color: #EBEBEB;
   width: 255px;
   height: 255px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
