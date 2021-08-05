@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="https://kit.fontawesome.com/21a19573f0.js" crossorigin="anonymous"></script>
+    <script src="./js/modernizr.js"></script>
     <title>BuhOne Template</title>
   </head>
   <body>
@@ -18,13 +18,15 @@
         </a>
         <nav class="right-navbar">
           <ul class="upper-list">
-            <li class="upper-links-parent">
-              <a href="tel:8(111)222-33-44" class="upper-links phone"
+            <li>
+              <a href="tel:8(111)222-33-44" target="_blank"
+              rel="nofollow noreferrer noopener"class="upper-links phone"
                 >8(111)222-33-44</a>
             </li>
-            <li class="upper-links-parent"><a href="#" class="upper-links clock">Пн-Пт 10:00-18:00</a></li>
+            <li><a href="#" class="upper-links clock">Пн-Пт 10:00-18:00</a></li>
             <li>
-              <a href="mailto:order@buhone.ru" class="upper-links mail">order@buhone.ru</a>
+              <a href="mailto:order@buhone.ru" target="_blank"
+              rel="nofollow noreferrer noopener" class="upper-links mail">order@buhone.ru</a>
             </li>
             <li>
               <a
@@ -39,7 +41,7 @@
           <ul class="bottom-list">
             <li><a href="/" class="bottom-links bl-first">Главная</a></li>
             <li><a href="#services" class="bottom-links">Услуги</a></li>
-            <li><a href="#cases" class="bottom-links">Кейсы</a></li>
+            <li><a href="#clients" class="bottom-links">Клиенты</a></li>
             <li><a href="#about-us" class="bottom-links">О компании</a></li>
             <li><a href="#contacts" class="bottom-links bl-last">Контакты</a></li>
           </ul>
@@ -60,7 +62,7 @@
           <h3 class="h2">Наши услуги</h3>
           <h3 class="h3">Мы специализируемся</h3>
           <div class="list-of-services">
-            <a href="#" class="service-links"> <h4 class="h4">Бухгалтерское обслуживание</h4></a>
+            <a href="#" class="service-links">Бухгалтерское обслуживание</a>
             <a href="#" class="service-links">Бухгалтерское обслуживание</a>
             <a href="#" class="service-links">Бухгалтерское обслуживание</a>
             <a href="#" class="service-links">Бухгалтерское обслуживание</a>
@@ -69,42 +71,56 @@
           </div>
         </div>
       </section>
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <div class="container">
-          <ul class="ul text-list">
-            <li><h3 class="h3 grey-heading">О нас</h3></li>
-            <li><h2 class="h2">Компания</h2></li>
-            <li><h2 class="h2 blue-text">ИвановПром</h2></li>
-            <li>
-              <p class="body-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus qui, vero animi quisquam, rem aspernatur asperiores,
-                quo et ea rerum at suscipit blanditiis aliquam accusantium? Illo
-                ut quisquam quaerat officiis veniam. Accusantium fugit tenetur
-                officiis numquam perferendis ea iusto assumenda odio ad?
-                Dolores, provident itaque mollitia eveniet quisquam
-                necessitatibus deserunt commodi maxime laborum consequuntur iste
-                quae quidem esse facilis quis?
-              </p>
-            </li>
-          </ul>
+    <div class="about-us-desc">
+      <h2 class="h2">О нас</h2>
+      <h3 class="h3">Компания</h3>
+      <h2 class="h3 blue-text">ИвановПром</h2>
+        <p class="body-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Doloribus qui, vero animi quisquam, rem aspernatur asperiores,
+          quo et ea rerum at suscipit blanditiis aliquam accusantium? Illo
+          ut quisquam quaerat officiis veniam. Accusantium fugit tenetur
+          officiis numquam perferendis ea iusto assumenda odio ad?
+          Dolores, provident itaque mollitia eveniet quisquam
+          necessitatibus deserunt commodi maxime laborum consequuntur iste
+          quae quidem esse facilis quis?
+        </p>
+    </div>
+          <div class="about-us-list">
+            <a href="#" class="about-us-item">
+              <h4 class="h4">90</h4>
+              <h5 class="h5">Завершено крупных сделок</h5>
+              <h5 class="h5 link-text">Все кейсы</h5>
+            </a>
+            <a href="#" class="about-us-item">
+              <h4 class="h4">90</h4>
+              <h5 class="h5">Завершено крупных сделок</h5>
+              <h5 class="h5 link-text">Все кейсы</h5>
+            </a>
+            <a href="#" class="about-us-item">
+              <h4 class="h4">90</h4>
+              <h5 class="h5">Завершено крупных сделок</h5>
+              <h5 class="h5 link-text">Все кейсы</h5>
+            </a>
+            <a href="#" class="about-us-item">
+              <h4 class="h4">90</h4>
+              <h5 class="h5">Завершено крупных сделок</h5>
+              <h5 class="h5 link-text">Все кейсы</h5>
+            </a>
+        </div>
+      </div>
+      </section>
 
-          <ul class="about-us-list">
-            <li class="about-us-items">
-              <a href="#" class="about-us-links">90</a>
-            </li>
-            <li class="about-us-items">
-              <a href="#" class="about-us-links">90</a>
-            </li>
-            <li class="about-us-items">
-              <a href="#" class="about-us-links">90</a>
-            </li>
-            <li class="about-us-items">
-              <a href="#" class="about-us-links">90</a>
-            </li>
-          </ul>
+      <section class="clients" id="clients">
+        <div class="container">
+          <h2 class="h2">Наши клиенты</h2>
+          <h3 class="h3">C нами работают</h3>
         </div>
       </section>
+      <section class="section"></section>
+      <section class="section"></section>
       <section class="section"></section>
     </main>
     <script>
