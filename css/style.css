@@ -564,14 +564,13 @@ button{
 .right-navbar {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   }
 
 .upper-list {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  margin-left: 80px;
+  justify-content: space-between;
 }
 
 .upper-links {
@@ -582,11 +581,34 @@ button{
   padding: 20px 15px;
 }
 
+.upper-links:hover {
+  background-color:#005fa36c;
+}
+
+.phone::before {
+  content: url(../img/phone.svg);
+  padding-right: 15px;
+}
+
+.clock::before {
+  content: url(../img/clock.svg);
+  padding-right: 15px;
+}
+
+.mail::before {
+  content: url(../img/mail.svg);
+  padding-right: 15px;
+}
+
+.geo::before {
+  content: url(../img/geo.svg);
+  padding-right: 15px;
+}
+
 .bottom-list {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  margin-left: 80px; 
+  justify-content: space-between;
 }
 
 .bottom-links {
@@ -594,19 +616,24 @@ button{
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
+  /* letter-spacing: 0,1; */
   text-transform: uppercase;
-  padding: 15px 30px;
+  padding: 15px 34px;
 }
 
-.bottom-links:nth-child(5) {
-  padding-right: 0px;
+.bottom-links:hover {
+  background-color:#005fa36c;
 }
+
+
 /* MAIN OFFER START */
 .offer {
   background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(/img/background_picture.png) no-repeat 50% / cover;
   padding-top: 170px;
   padding-bottom: 240px;
 }
+
+
 
 .h1 {
   margin-bottom: 48px;
