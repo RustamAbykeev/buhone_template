@@ -460,14 +460,13 @@ table {
 
 .h3 {
   font-family: 'Merriweather';
-  font-weight: 900px;
+  font-weight: 900;
   font-size: 48px;
   color: #333333;
   line-height: 145%;
 }
 
 .h4 {
-  font-family: 'Roboto';
   font-weight: 900;
   font-size: 55px;
   line-height: 110%;
@@ -475,7 +474,6 @@ table {
 }
 
 .h5 {
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
   line-height: 110%;
@@ -529,8 +527,6 @@ button{
 }
 
 .btn {
-  max-width: 270px;
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 18px;
   line-height: 110%;
@@ -594,7 +590,6 @@ button{
 
 
 .upper-links {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 13px;
   line-height: 110%;
@@ -633,7 +628,6 @@ button{
 }
 
 .bottom-links {
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -745,8 +739,13 @@ button{
 
 .about-us-item:hover  {
 background-color: #005FA3;
-color:white;
+/* color:white; */
 }
+
+.about-us-item:hover>.h4, .about-us-item:hover>.h5  {
+  color:white;
+  }
+  
 
 
 /* CLIENTS START*/
