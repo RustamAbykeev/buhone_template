@@ -640,9 +640,9 @@ button{
 
 
 /* MAIN OFFER START */
-.offer {
+.offer, .new-offer {
   padding-top: 170px;
-  padding-bottom: 240px;
+  padding-bottom: 110px;
 }
 
 .no-webp .offer {
@@ -653,11 +653,69 @@ button{
   background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(/img/background_picture.webp) no-repeat 50% / cover;
 }
 
+.no-webp .new-offer {
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(/img/background_picture.png) no-repeat 50% / cover;
+}
+
+.webp .new-offer {
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(/img/background_picture.webp) no-repeat 50% / cover;
+}
 
 .h1 {
   margin-bottom: 48px;
 }
 
+.slider-arrows-offer {
+  width: 120px;
+  display: flex;
+  flex-flow: row nowrap; 
+}
+.slider-arrow-next, .slider-arrow-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-color: #ffffff2c;
+}
+
+.slider-arrow-prev {
+  order: -1;
+}
+
+.slider-arrow-next:hover,
+.slider-arrow-prev:hover {
+  background-color: #ffffff71;
+}
+
+/* .swiper-wrapper {
+  margin-bottom: 70px; 
+} */
+
+.pag-arrows {
+  display: flex;
+  justify-content: space-between;
+    margin-top: 110px;
+  }
+
+.slider-pagination {
+  display:flex;
+  align-items: flex-end;
+}
+.slider-pagination>.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  opacity: 0.4;
+  margin-right: 40px;
+}
+
+
+.slider-pagination>.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+  opacity: 1;
+}
 /* SERVICES START */
 
 .services {

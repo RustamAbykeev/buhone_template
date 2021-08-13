@@ -1,4 +1,3 @@
-<script>
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
@@ -11,4 +10,24 @@
           });
         });
       });
-    </script>
+
+const offerSlider = new Swiper('.offer-slider', {
+    slidesPerView: 1,
+    loop: true,
+    // speed: 400,
+    navigation: {
+        nextEl: '.slider-arrow-next',
+        prevEl: '.slider-arrow-prev',
+    },
+pagination: {
+    el: '.slider-pagination',
+    type: 'bullets',
+    bulletClass: 'swiper-pagination-bullet',
+    bulletActiveClass: 'swiper-pagination-bullet-active',
+    clickable: true,
+}
+
+}) 
+    
+
+
