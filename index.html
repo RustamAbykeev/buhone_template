@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="./css/style.css" />
+    <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style" crossorigin />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/modernizr.js"></script>
+    <script async src="./js/modernizr.js"></script>
     <title>BuhOne Template</title>
   </head>
   <body>
@@ -27,7 +30,7 @@
           <ul class="upper-list">
             <li>
               <a
-                href="tel:8-111-222-33-44"
+                href="tel:+81112223344"
                 class="upper-links phone"
                 >8(111)222-33-44
               </a>
@@ -36,8 +39,6 @@
             <li>
               <a
                 href="mailto:order@buhone.ru"
-                target="_blank"
-                rel="nofollow noreferrer noopener"
                 class="upper-links mail"
                 >order@buhone.ru</a
               >
@@ -73,7 +74,7 @@
       </section>
       <section class="services" id="services">
         <div class="container">
-          <h3 class="h2">Наши услуги</h3>
+          <h2 class="h2">Наши услуги</h2>
           <h3 class="h3">Мы специализируемся</h3>
           <div class="list-of-services">
             <a href="#" class="service-links">Бухгалтерское обслуживание</a>
@@ -89,8 +90,7 @@
         <div class="container">
           <div class="about-us-desc">
             <h2 class="h2">О нас</h2>
-            <h3 class="h3">Компания</h3>
-            <h2 class="h3 blue-text">ИвановПром</h2>
+            <h3 class="h3">Компания <span class="blue-text">ИвановПром</span></h3>
             <p class="body-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
               qui, vero animi quisquam, rem aspernatur asperiores, quo et ea
@@ -136,19 +136,7 @@
       <section class="section"></section>
       <section class="section"></section>
     </main>
-    <script>
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          const target =
-            this.getAttribute("href").length > 1
-              ? document.querySelector(this.getAttribute("href"))
-              : document.body.firstElementChild;
-          target.scrollIntoView({
-            behavior: "smooth",
-          });
-        });
-      });
-    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

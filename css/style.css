@@ -517,6 +517,7 @@ a {
   color: inherit;
   display: inline-flex;
 }
+
 button{
   font: inherit;
   color: inherit;
@@ -640,7 +641,6 @@ button{
 
 /* MAIN OFFER START */
 .offer {
-  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(/img/background_picture.png) no-repeat 50% / cover;
   padding-top: 170px;
   padding-bottom: 240px;
 }
@@ -679,7 +679,6 @@ button{
 }
 
 .service-links {
-  font-family: 'Roboto';
   font-weight: 900;
   font-size: 24px;
   line-height: 125%;
@@ -701,22 +700,24 @@ button{
   background-color: white;
 }
 
-.about-us .container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.blue-text {
-  color:#005FA3;
-  margin-top: 20px;
-  margin-bottom: 60px;
-}
-
 .about-us-desc {
   width: 50%;
   padding-right: 120px;
 }
 
+.about-us .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us-desc>.h3 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.blue-text {
+  color:#005FA3;
+}
 
 .about-us-list {
   width: 50%;
@@ -727,14 +728,18 @@ button{
 
 .about-us-item {
   width: 255px;
-  height: 255px;
+  /* height: 255px; */
   flex-flow: row wrap;
   background-color: #EBEBEB;
   padding: 40px;
 }
 
+.about-us-item>.h4 {
+  margin-bottom: 30px;
+}
 .link-text {
   align-self: flex-end;
+  margin-top: 45px;
 }
 
 .about-us-item:hover  {
