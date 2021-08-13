@@ -518,6 +518,10 @@ a {
   display: inline-flex;
 }
 
+/* span {
+  display: inline-flex;
+} */
+
 button{
   font: inherit;
   color: inherit;
@@ -636,7 +640,6 @@ button{
   text-transform: uppercase;
   padding: 15px 34px;
 }
-
 
 
 /* MAIN OFFER START */
@@ -815,6 +818,7 @@ background-color: #005FA3;
 
 .clients {
   padding: 100px 0px;
+  background-color: #EBEBEB;
 }
 
 .clients .h2 {
@@ -854,3 +858,66 @@ justify-content: space-between;
   margin-top: 50px;
 }
 
+/* REVIEWS START*/
+
+.reviews {
+  padding-top: 120px;
+  padding-bottom: 140px;
+  background-color: white;
+}
+
+.reviews .h3 {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.reviews .swiper-slide {
+  padding: 45px;
+  background-color: #EBEBEB;
+}
+
+.reviews-lead {
+  max-width: 280px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 55px;
+}
+
+.reviews-name {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 115%;
+  color: #000000;
+}
+
+.reviews-company {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 115%;
+  color: #4F4F4F;
+}
+
+.reviews-avatar {
+  margin-right: 35px;
+}
+
+.slider-arrows-reviews {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #005fa360;
+}
+
+.slider-reviews-arrow-prev {
+  order: -1;
+}
+
+.slider-reviews-arrow-next:hover,
+.slider-reviews-arrow-prev:hover {
+  background-color: #005FA3;
+}
+
+.pagination-reviews .swiper-pagination-bullet {
+  background-color: #005FA3;
+}

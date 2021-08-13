@@ -26,7 +26,6 @@ pagination: {
     bulletActiveClass: 'swiper-pagination-bullet-active',
     clickable: true,
 }
-
 }) 
     
 const clientsSlider = new Swiper('.clients-slider', {
@@ -44,6 +43,21 @@ pagination: {
     bulletActiveClass: 'swiper-pagination-bullet-active',
     clickable: true,
 }
-
 }) 
 
+const reviewsSlider = new Swiper('.reviews-slider', {
+    slidesPerView: 1,
+    loop: true,
+    // speed: 400,
+    navigation: {
+        nextEl: '.slider-reviews-arrow-next',
+        prevEl: '.slider-reviews-arrow-prev',
+    },
+pagination: {
+    el: '.slider-pagination',
+    type: 'bullets',
+    bulletClass: 'swiper-pagination-bullet',
+    bulletActiveClass: 'swiper-pagination-bullet-active',
+    clickable: true,
+}
+}) 
