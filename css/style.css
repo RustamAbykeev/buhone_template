@@ -670,7 +670,7 @@ button{
   display: flex;
   flex-flow: row nowrap; 
 }
-.slider-arrow-next, .slider-arrow-prev {
+.slide-arrow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -820,3 +820,37 @@ background-color: #005FA3;
 .clients .h2 {
   margin-bottom: 40px;
 }
+
+.clients .h3 {
+  margin-bottom: 80px;
+}
+
+.clients .swiper-slide {
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-between;
+}
+
+.slider-arrows-clients {
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #005fa360;
+}
+
+.slider-clients-arrow-prev {
+  order: -1;
+}
+
+.slider-clients-arrow-next:hover,
+.slider-clients-arrow-prev:hover {
+  background-color: #005FA3;
+}
+
+.pagination-clients .swiper-pagination-bullet {
+  background-color: #005FA3;
+}
+
+.clients .pag-arrows {
+  margin-top: 50px;
+}
+

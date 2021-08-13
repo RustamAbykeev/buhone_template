@@ -29,5 +29,21 @@ pagination: {
 
 }) 
     
+const clientsSlider = new Swiper('.clients-slider', {
+    slidesPerView: 1,
+    loop: true,
+    // speed: 400,
+    navigation: {
+        nextEl: '.slider-clients-arrow-next',
+        prevEl: '.slider-clients-arrow-prev',
+    },
+pagination: {
+    el: '.slider-pagination',
+    type: 'bullets',
+    bulletClass: 'swiper-pagination-bullet',
+    bulletActiveClass: 'swiper-pagination-bullet-active',
+    clickable: true,
+}
 
+}) 
 
