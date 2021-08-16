@@ -533,7 +533,7 @@ button{
 .btn {
   font-weight: 400;
   font-size: 18px;
-  line-height: 110%;
+  line-height: 115%;
   background-color: #005FA3;
   color: #FFFFFF;
   padding: 18px 45px;
@@ -944,6 +944,7 @@ justify-content: space-between;
 .footer-text {
   width: 50%;
 }
+
 .footer-text, .footer-text>.h3 {
   color: white;
 }
@@ -956,39 +957,79 @@ justify-content: space-between;
 .footer-list {
   display: flex;
   justify-content: flex-start;
+  gap:40px;
+  align-items: center;
 }
 
-.form-container {
-  width:50%;
+/* .footer-list>li {
+
+} */
+.footer-links {
+  font-size: 21px;
+  line-height: 140%;
+  align-items: center;
 }
+
+.phone-footer::before {
+  content: url(../img/phone-footer.svg);
+  padding-right: 15px;
+  padding-top: 7px;
+}
+
+.mail-footer::before {
+  content: url(../img/mail-footer.svg);
+  padding-right: 15px;
+  padding-top: 7px;
+}
+
+
 .form {
-  width:100%;
+  /* width:100%; */
+  width: 50%;
   display: flex;
-  flex-flow: column wrap;
-  /* gap: 30px; */
+  flex-flow: row-reverse wrap;
+  row-gap: 50px;
+  column-gap: 30px;
 }
 
+.name, .surname {
+  width: calc((100% - 30px) / 2);
+}
+.message {
+  width: 100%;
+}
 .form-leads {
   font-weight: 400;
   font-size: 16px;
   line-height: 115%;
   color: #FFFFFF;
+  margin-bottom: 15px;
 }
 
 .input-field {
+  width: 100%;
   padding-left: 0px;
   background-color: transparent;
   border-style: solid;
   border-color: transparent;
   border-bottom-color: #bdbdbdb4;
   border-left-width: 0px;
-
+  color:#BDBDBD;
+  font-family: Roboto;
+  font-size: 21px;
+  line-height: 115%;
 }
 
-.name, .surname {
+.form>.btn {
   width: 50%;
+  padding: 20px 40px;
 }
 
-.message {
-  width: 100%;
+.form-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message-text {
+  padding-bottom: 80px;
 }
