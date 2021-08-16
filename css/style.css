@@ -950,8 +950,8 @@ justify-content: space-between;
 }
 
 .footer-text>.body-text {
-  margin-top: 60px;
-  margin-bottom: 70px;
+  margin-top: 50px;
+  margin-bottom: 60px;
 }
 
 .footer-list {
@@ -961,9 +961,6 @@ justify-content: space-between;
   align-items: center;
 }
 
-/* .footer-list>li {
-
-} */
 .footer-links {
   font-size: 21px;
   line-height: 140%;
@@ -997,6 +994,7 @@ justify-content: space-between;
 }
 .message {
   width: 100%;
+  margin-top: 30px;
 }
 .form-leads {
   font-weight: 400;
@@ -1032,4 +1030,19 @@ justify-content: space-between;
 
 .message-text {
   padding-bottom: 80px;
+}
+
+.copyright {
+  background-color: white;
+  padding: 50px;
+}
+
+.copyright>.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copiright-text {
+  font-size: 14px;
+  line-height: 115%;
 }
