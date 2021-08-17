@@ -539,6 +539,9 @@ button{
   padding: 18px 45px;
 }
 
+.btn:hover {
+  background-color: #005fa3d3;
+}
 .container {
   max-width: 1110px;
   width: 100%;
@@ -967,15 +970,19 @@ justify-content: space-between;
   align-items: center;
 }
 
+.footer-links:hover {
+  text-decoration: underline;
+}
+
 .phone-footer::before {
   content: url(../img/phone-footer.svg);
-  padding-right: 15px;
+  margin-right: 15px;
   padding-top: 7px;
 }
 
 .mail-footer::before {
   content: url(../img/mail-footer.svg);
-  padding-right: 15px;
+  margin-right: 15px;
   padding-top: 7px;
 }
 
@@ -1018,6 +1025,18 @@ justify-content: space-between;
   line-height: 115%;
 }
 
+.form::placeholder {
+  color:#BDBDBD;
+  font-family: Roboto;
+  font-size: 21px;
+  line-height: 115%;
+}
+
+.form :focus::placeholder {
+  color: transparent;
+  transform: translate(50px);
+}
+
 .form>.btn {
   width: 50%;
   padding: 20px 40px;
@@ -1029,8 +1048,10 @@ justify-content: space-between;
 }
 
 .message-text {
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
 }
+
+/* COPIRIGHT START */
 
 .copyright {
   background-color: white;
