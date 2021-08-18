@@ -1034,7 +1034,7 @@ justify-content: space-between;
 
 .form :focus::placeholder {
   color: transparent;
-  transform: translate(50px);
+  /* transform: translate(50px); */
 }
 
 .form>.btn {
@@ -1048,7 +1048,8 @@ justify-content: space-between;
 }
 
 .message-text {
-  /* padding-bottom: 80px; */
+  max-width: 100%;
+  min-height: 120px;
 }
 
 /* COPIRIGHT START */
