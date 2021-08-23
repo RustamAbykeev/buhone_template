@@ -651,19 +651,19 @@ button{
 }
 
 .no-webp .offer {
-  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(/img/background_picture.png) no-repeat 50% / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(../img/background_picture.png) no-repeat 50% / cover;
 }
 
 .webp .offer {
-  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(/img/background_picture.webp) no-repeat 50% / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(../img/background_picture.webp) no-repeat 50% / cover;
 }
 
 .no-webp .new-offer {
-  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(/img/background_picture.png) no-repeat 50% / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(../img/background_picture.png) no-repeat 50% / cover;
 }
 
 .webp .new-offer {
-  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(/img/background_picture.webp) no-repeat 50% / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.397)), url(../img/background_picture.webp) no-repeat 50% / cover;
 }
 
 .h1 {
@@ -931,11 +931,11 @@ justify-content: space-between;
 }
 
 .no-webp .footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.397)), url(/img/background_picture.png) no-repeat 50% / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.397)), url(../img/background_picture.png) no-repeat 50% / cover;
 }
 
 .webp .footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.397)), url(/img/background_picture.webp) no-repeat 50% / cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.397)), url(../img/background_picture.webp) no-repeat 50% / cover;
 }
 
 .footer>.container {
@@ -1049,7 +1049,9 @@ justify-content: space-between;
 
 .message-text {
   max-width: 100%;
-  min-height: 120px;
+  height: 120px;
+  resize: vertical;
+  max-height: 400px;
 }
 
 /* COPIRIGHT START */
@@ -1068,3 +1070,27 @@ justify-content: space-between;
   font-size: 14px;
   line-height: 115%;
 }
+
+/* MEDIA QUERIES START */
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { }
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { }
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { }
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { }
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { }
+
+
+
+
+
+
+
