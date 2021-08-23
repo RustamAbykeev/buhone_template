@@ -991,7 +991,8 @@ justify-content: space-between;
   /* width:100%; */
   width: 50%;
   display: flex;
-  flex-flow: row-reverse wrap;
+  flex-flow: row wrap;
+  justify-content: flex-end;
   row-gap: 50px;
   column-gap: 30px;
 }
@@ -1040,11 +1041,6 @@ justify-content: space-between;
 .form>.btn {
   width: 50%;
   padding: 20px 40px;
-}
-
-.form-btn {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .message-text {
