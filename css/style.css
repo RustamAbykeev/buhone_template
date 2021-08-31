@@ -1179,7 +1179,7 @@ button {
 
 /* `xsm` applies to x-small devices (iphone 5,5s, SE up to 320px) */
 @media (max-width: 320px) {
-}
+
 
   .header > .container {
     flex-direction: column;
