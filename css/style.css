@@ -1164,6 +1164,7 @@ button {
 @media (max-width: 991.98px) {
   .container {
     max-width: 720px;
+    background-color: green;
   }
 
   .header > .container {
