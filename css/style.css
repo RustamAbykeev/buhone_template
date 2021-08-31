@@ -1073,16 +1073,37 @@ justify-content: space-between;
 @media (max-width: 1399.98px) { }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { }
+@media (max-width: 1199.98px) {
+  .container {
+    max-width: 960px;
+  }
+}
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { }
+@media (max-width: 991.98px) {
+.container {
+  max-width: 720px;
+}
+}
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { }
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 540px;
+  }
+}
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { }
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+/* `xsm` applies to x-small devices (iphone 5,5s, SE up to 320px) */
+@media (max-width: 320px) {
+}
 
 
 
