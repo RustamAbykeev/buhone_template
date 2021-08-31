@@ -1153,19 +1153,33 @@ button {
   .container {
     max-width: 960px;
   }
-
-  .about-us-item {
-    width: 225px;
-    height: 225px;
-  }
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+.container {
+  max-width: 720px;
+}
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
   .container {
-    max-width: 720px;
-    background-color: green;
+    max-width: 540px;
   }
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+/* `xsm` applies to x-small devices (iphone 5,5s, SE up to 320px) */
+@media (max-width: 320px) {
+
 
   .header > .container {
     flex-direction: column;
